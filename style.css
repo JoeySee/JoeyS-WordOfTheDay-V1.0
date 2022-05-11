@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+	color:black;
+	background-color:white;
+	font-family:Arial, sans-serif;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background.jpg"); 
+}
+
+#word{
+	text-transform:uppercase;
+}
+
+#grid-container{
+	display:grid;
+	grid-template-areas:
+		"header header"
+		"word ."
+		"partOfSpeech phonetics"
+		"definition definition"
+		"synonym antonym"
+		"synoBtn antoBtn"
+		"phoneDiv defBtn "
+		"wordBtn pOSDiv"
+		"src src";
+	font-size:15pt;
+	
+	width:80vw;
+	height:55vh;
+	margin-top:10vh;
+	margin-left:15vw;
+	padding:5%;
+	overflow:hidden;
+	
+	font-size:10pt;
+	
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/book.png");
+	background-size:cover;	
+	
+	color:#048ABF;
+	/* background-color: #260101; */
+	/* border:7px solid #593A28; */
+}
+
+#partOfSpeech{
+	grid-area:partOfSpeech;
+	text-transform:uppercase;
+}
+
+#synonym{
+	grid-area:synonym;
+	margin-left:21%;
+}
+
+#antonym{
+	grid-area:antonym;
+	margin-left:21%;
+}
+
+#src{
+	grid-area:src;
+	padding:0;
+	margin-left:0;
+}
+
+#header{
+	grid-area:header;
+}
+
+#word{
+	grid-area:word;
+}
+
+#phonetics{
+	grid-area:phonetics;
+}
+
+#phonetics:hover{
+	color:#D25469;
+}
+
+#definition{
+	grid-area:definition;
+}
+
+.button{
+	margin-top: 5%;
+	margin-left:10%;
+	width:40%;
+	height:auto;
+	
+	background-color:rgba(0,0,255,0.0);
+	border:none;
+	color:#D25469;
+	font-weight:bold;
+	font-size:10pt;
+	text-decoration:none;
+}
+
+.button:hover{
+	color:#048ABF;
+}
+
+.buttonDivs{
+	width:50%;
+	text-align:center;
+	padding:10%;
+}
+
+#defBtnDiv{
+	grid-area:defBtn;
+}
+
+#wordBtnDiv{
+	grid-area:wordBtn;
+}
+
+#synoBtnDiv{
+	grid-area:synoBtn;
+}
+
+#antoBtnDiv{
+	grid-area:antoBtn;
+}
+
+#grid-container h2{
+	color:#D25469;
+}
+
+#cyclePOSDiv{
+	grid-area:pOSDiv;
+}
+
+#cyclePhoneDiv{
+	grid-area:phoneDiv;
+}
+
+#phoneticNoise{
+	display:none;
+}
+
+@media (min-width: 750px){
+	#grid-container{
+		margin-top:17.5vh;
+		
+		height:65vh;
+		font-weight:bold;
+		
+		font-size:12pt;
+		
+		width:40vw;
+		margin-left:30vw;
+	}
+	.button{
+		font-size:12pt;
+	}
+	#synonym{
+		font-size:12pt;
+	}
+	#antonym{
+		font-size:12pt;
+	}
+}
+
+@media (min-width: 1100px){
+	#src{
+		margin-left:15%;
+	}
+	#grid-container{
+		font-size:15pt;
+	}
+}

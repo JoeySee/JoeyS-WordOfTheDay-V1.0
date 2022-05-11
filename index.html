@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Word of the Day</title>
+    
+	<!-- Favicon -->
+	<link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
+	
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+    
+    <!-- include an external JavaScript file -->
+    <script src="myscript.js"></script>
+	
+  </head>
+  
+  <body>
+	<div id="grid-container">
+		<h2 id="header">Word of the Day</h2>
+		 <div id="word"></div> <div id="phonetics" onclick="playSound()"></div>
+		 <div id="partOfSpeech"></div>
+		 <div id="definition"></div>
+		 <div id="synonym"></div>
+		 <div id="antonym"></div>
+		 <div id="synoBtnDiv" class="btnDivs"><button class="button" id="synoBtn" onclick="changeSyno()">Cycle Synonym</button></div>
+		 <div id="antoBtnDiv" class="btnDivs"><button class="button" id="antoBtn" onclick="changeAnto()">Cycle Antonym</button></div>
+		 <div id="src" class="button"></div>
+		 <div id="defBtnDiv" class="btnDivs"><button class="button" id="defBtn" onclick="changeDef()">Cycle Definition</button></div>
+		 <div id="wordBtnDiv" class="btnDivs"><button class="button" id="wordBtn" onclick="getWord()">Generate New Word</button></div>
+		 <div id="cyclePOSDiv" class="btnDivs"><button class="button" id="pOSBtn" onclick="changePOS()">Cycle Word Type</button></div>
+		 <div id="cyclePhoneDiv" class="btnDivs"><button class="button" id="phoneBtn" onclick="changePhone()">Cycle Phonetics</button></div>
+		 <div id="phoneticNoise"></div>
+		</div> 
+  </body>
+  
+</html>
